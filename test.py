@@ -22,6 +22,8 @@ df['clean_comment_text'] = df['comment_text'].astype(str).str.lower().apply(lamb
 # Predict
 predictions = model.predict(df['clean_comment_text'])
 
+# create output DataFrame
+results = []
 for i, row in enumerate(predictions):
     comment = df.loc[i, 'comment_text']
     predicted_labels = [label for label, val in zip(LABELS, row) if val == 1]
