@@ -22,9 +22,16 @@ df['clean_comment_text'] = df['comment_text'].astype(str).str.lower().apply(lamb
 # Predict
 predictions = model.predict(df['clean_comment_text'])
 
-# Attach predictions to DataFrame
-for i, label in enumerate(LABELS):
-    df[label] = predictions[:, i]
+for i, row in enumerate(predictions):
+    comment = df.loc[i, 'comment_text']
+    predicted_labels = [label for label, val in zip(LABELS, row) if val == 1]
+    if predicted_labels:  # Only include rows with at least one label predicted
+        results.append({
+            'comment_text': comment,
+            'predicted_labels': ', '.join(predicted_labels)
+        })
 
-# Show results
-print(df[['comment_text'] + LABELS].head(10))
+output_df = pd.DataFrame(results)
+
+# Show top results
+print(output_df.head(10))
