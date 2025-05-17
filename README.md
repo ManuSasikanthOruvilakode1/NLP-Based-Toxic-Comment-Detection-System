@@ -16,6 +16,8 @@ It includes labeled comments across six categories:
 * Insult
 * Identity hate
 
+Dataset link: https://drive.google.com/drive/folders/1h_VObqxmpH0K8bbA8pyJiANnlLJyXvbS?usp=drive_link
+
 ### Features
 
 * Text preprocessing: cleaning, tokenization, stop-word removal
