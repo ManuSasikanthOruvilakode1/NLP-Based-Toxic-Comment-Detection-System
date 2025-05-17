@@ -1,9 +1,6 @@
 # NLP-Based-Toxic-Comment-Detection-System
 
-
-## 🧠 NLP-Based Toxic Comment Detection System
-
-### 🔒 DETECTING & BLOCKING MALICIOUS COMMENTS USING AI
+## DETECTING & BLOCKING MALICIOUS COMMENTS USING AI
 
 This project is an AI-powered system designed to automatically **detect and flag toxic comments** using Natural Language Processing (NLP) techniques. The goal is to make online platforms safer by identifying harmful or abusive language in user-generated content.
 
@@ -27,7 +24,7 @@ It includes labeled comments across six categories:
 * Integrated web interface to demo the system
 * Scalable for future moderation tool integrations
 
-### 🛠️ Installation
+### Installation
 
 Install [**Tesseract OCR**](https://github.com/tesseract-ocr/tesseract) if OCR from images is needed:
 
@@ -37,7 +34,7 @@ installation path: C:\Program Files\Tesseract-OCR
 sudo apt install tesseract-ocr
 ```
 
-### 🌐 Web Interface
+### Web Interface
 
 Includes a lightweight web interface (Flask) to input image and displays flagged or toxic comments.
 
