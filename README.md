@@ -30,6 +30,7 @@ It includes labeled comments across six categories:
 ### 🛠️ Installation
 
 Install [**Tesseract OCR**](https://github.com/tesseract-ocr/tesseract) if OCR from images is needed:
+
 installation path: C:\Program Files\Tesseract-OCR
 
 ```bash
